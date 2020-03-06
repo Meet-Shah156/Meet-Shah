@@ -1,0 +1,379 @@
+@font-face{
+    font-family: SpartanLimport;
+    src:url("fonts/spartan/SpartanMB-Black.otf");
+  }
+
+@font-face{
+    font-family: RalewayELimport;
+    src:url("fonts/raleway/Raleway-ExtraLight.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    line-height: 1.5;
+  }
+  /* helper/utility classes */
+  a {
+    text-decoration: none;
+  }
+.header {
+   min-height: 100vh;
+   /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+     url("./Cafe3.jpeg") center/cover no-repeat;*/
+     background-color: none;
+   position: relative;
+   background-attachment: fixed;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(20px);
+}
+
+.logo{
+    float:left;
+    padding: 0% 10%;
+    z-index: 3;
+    position: fixed;
+}
+
+.arrow-img{
+    padding-top: 90%;
+}
+
+.arrow{
+    background-color: none;
+    border-radius: 50%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+.fix {
+    position: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    z-index: 1;
+    background: none;
+    float:left;
+    padding-right: 5%;
+  }
+  
+.main{
+    position: absolute;
+}
+  
+.main a {
+    float: right;
+    background: none;
+    padding: 15px;
+    padding-right:2%;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #f8f9fa;
+    display: inline;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 500;
+    font-size: medium;
+}
+  
+  .fix-background{
+    position: fixed;
+    padding: 28px;
+    width: 100%;
+    background: none;
+    color: white;
+    z-index: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+  } 
+  
+
+  
+  .a1:hover {
+    color: #f9bb4b;
+    font-weight: 500;
+  }
+  
+  .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.5rem;
+  }
+  
+  .banner-subtitle {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: RalewayELimport;
+    color: #f8f9fa;
+    /* animation */
+    animation-name: lefts;
+    animation-duration: 3s;
+    animation-timing-function: 1;
+  }
+  
+  .banner-title {
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-family:SpartanLimport;
+    font-size: 3.5rem;
+    color: #f8f9fa;
+    margin-top: 2.5rem;
+    line-height: 1.3;
+    /* animation */
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    padding: 15px;
+    
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: medium;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e0e5ec;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown h2 {
+    color: #f8f9fa;
+    font-weight: 500;
+    font-size: medium;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color:#20749e;
+    color:black;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown :hover{
+    color: #f9bb4b;
+    cursor: pointer;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.skills {
+    background-color: #e0e5ec;
+    display: inline-flex;
+    width:100%;
+    height: 17rem;
+  }
+  .skill1 {
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: 0.5s;
+    font-size: 15px;
+    width:25%;
+  }
+  .skill2 {
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: 0.5s;
+    width:25%;
+  }
+  
+  .skill-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    margin-bottom: 1.5rem;
+    color: #20749e;
+    transition: 0.5s;
+  }
+  .skill-text {
+    max-width: 13rem;
+    margin: 0 auto;
+    text-shadow: 10px;
+  }
+  
+  .skill1:hover {
+    background:#113e54;
+    opacity: 1.2;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .skill2:hover {
+    background: #113e54;
+    opacity: 1.2;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  
+  .skill1:hover .skill-title {
+    font-size: 17px;
+  }
+  
+  .skill2:hover .skill-title {
+    font-size: 17px;
+  }
+  
+  .skill1:hover .skill-text {
+    color: white;
+  }
+  .skill2:hover .skill-text {
+    color: white;
+  }
+
+  .about{
+      background-color: #e0e5ec;
+  }
+
+  .events-template{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+      url("./events.jpg") center/cover no-repeat;
+    position: relative;
+    background-attachment: fixed;
+  }
+  
+  .events-title {
+    font-family:SpartanLimport ;
+    color:#bd1220;
+    margin-top: 2.5rem;
+    line-height: 1.3;
+    text-align: center;
+    padding-top: 6.5%;
+    font-size: 30px;
+  }
+  
+  .events-subtitle {
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+    font-size: 40px;
+  }
+
+  .event{
+    background-color: #E0E5EC;
+    display: inline-flex;
+    width:100%;
+  }
+  
+  .event-section{
+    float: left;
+    background-color: #E0E5EC;
+    width: 25%;
+    padding: 2rem;  
+    height: 100%;
+  }
+  
+  .event-card {
+      padding:4px;
+    background-color: #e0e5ec;
+    width: 90%;
+    height: 105%;
+    perspective: 1000px;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    border-radius: 4%;
+}
+
+.event-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 4%;
+}
+
+.about-img,
+.about-info {
+  padding: 1rem;
+}
+.about-picture-container {
+  font-size: small;
+}
+
+.about-picture {
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+  border-radius: 1rem;
+}
+
+
+}
+
+.about-picture-container:hover .about-picture {
+  opacity: 0.8;
+}
+.about-text {
+  margin: 1rem 0;
+  max-width: 26rem;
+  color: black;
+}
+
+.about-img,
+.about-info {
+  float: left;
+  width: 50%;
+  padding: 2rem;
+}
+
+.section-subtitle{
+    color: #20749e;
+    font-family: SpartanLimport;
+    font-size: 20px;
+  }
+  
+  .section-title{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .event-about{
+      text-align: center;
+      font-family:SpartanLimport ;
+      color: #20749e;
+  }
